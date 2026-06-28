@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+    <title>Peak Vouch - Blog chia sẻ kiến thức &amp; mã giảm giá</title>
+    <link>http://localhost:8000/blog</link>
+    <description>Chia sẻ mã giảm giá hot, kinh nghiệm mua sắm tiết kiệm và kiến thức tiêu dùng thông thái.</description>
+    <language>vi-vn</language>
+    <atom:link href="http://localhost:8000/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+        <title>Tạ Tiến Đức</title>
+        <link>http://localhost:8000/blog/ta-tien-duc</link>
+        <guid isPermaLink="true">http://localhost:8000/blog/ta-tien-duc</guid>
+        <description>fdasfdsadffdasfdasfasdsffdsa</description>
+        <pubDate>Fri, 26 Jun 2026 08:40:22 +0000</pubDate>
+        <author>Administrator</author>
+        <category>Mã giảm giá</category>
+    </item>
+    <item>
+        <title>How to Build a REST API</title>
+        <link>http://localhost:8000/blog/how-to-build-rest-api</link>
+        <guid isPermaLink="true">http://localhost:8000/blog/how-to-build-rest-api</guid>
+        <description>A guide to building REST APIs in modern PHP.</description>
+        <pubDate>Fri, 26 Jun 2026 08:20:50 +0000</pubDate>
+        <author>Administrator</author>
+        <category>Web Development</category>
+    </item>
+</channel>
+</rss>

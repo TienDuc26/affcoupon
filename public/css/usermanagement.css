@@ -1,0 +1,227 @@
+﻿/* =========================
+   CONTENT CARD
+========================= */
+.content-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* =========================
+   HEADER
+========================= */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.page-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    color: #1f2937;
+}
+
+.page-subtitle {
+    font-size: 14px;
+    color: #6b7280;
+    margin: 4px 0 0 0;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.btn-success {
+    background: #16a34a;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+    .btn-success:hover {
+        background: #15803d;
+    }
+
+/* =========================
+   TABLE
+========================= */
+.table-responsive {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+    .custom-table thead {
+        background: #f3f4f6;
+    }
+
+    .custom-table th {
+        padding: 14px;
+        font-size: 13px;
+        text-transform: uppercase;
+        color: #374151;
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+    .custom-table td {
+        padding: 14px;
+        font-size: 14px;
+        border-bottom: 1px solid #f1f1f1;
+        color: #111827;
+    }
+
+    .custom-table tbody tr:hover {
+        background: #f9fafb;
+    }
+
+/* =========================
+   BADGE
+========================= */
+.badge {
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.bg-success {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.bg-danger {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.bg-info {
+    background: #dbeafe;
+    color: #1e3a8a;
+}
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+.btn-action {
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+    .btn-action i {
+        font-size: 14px;
+    }
+
+.btn-view {
+    background: #e0f2fe;
+    color: #0284c7;
+}
+
+    .btn-view:hover {
+        background: #bae6fd;
+    }
+
+.btn-edit {
+    background: #fef9c3;
+    color: #a16207;
+}
+
+    .btn-edit:hover {
+        background: #fef08a;
+    }
+
+.btn-delete {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+    .btn-delete:hover {
+        background: #fecaca;
+    }
+
+/* =========================
+   MODAL
+========================= */
+.custom-modal {
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.modal-header {
+    background: #111827;
+    color: #fff;
+    padding: 14px 18px;
+}
+
+.modal-title {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.modal-body {
+    padding: 18px;
+}
+
+.modal-footer {
+    padding: 14px 18px;
+}
+
+/* =========================
+   FORM INPUTS
+========================= */
+.form-control {
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    padding: 10px;
+    font-size: 14px;
+}
+
+    .form-control:focus {
+        border-color: #16a34a;
+        box-shadow: 0 0 0 0.2rem rgba(22, 163, 74, 0.15);
+    }
+
+/* =========================
+   SWITCH
+========================= */
+.form-check-input {
+    width: 40px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.form-check-label {
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+    .page-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .btn-success {
+        width: 100%;
+    }
+}

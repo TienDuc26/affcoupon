@@ -1,0 +1,329 @@
+/* ========================================
+   ADD STORE PAGE
+======================================== */
+
+.add-store-page {
+    background: #fff;
+    border-radius: 8px;
+    padding: 28px;
+    border: 1px solid #e5e7eb;
+}
+
+/* ========================================
+   PAGE HEADER
+======================================== */
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.page-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #111827;
+    margin: 0;
+}
+
+.header-actions {
+    display: flex;
+    gap: 12px;
+}
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+.btn-primary-custom,
+.btn-dark-custom,
+.btn-upload {
+    height: 42px;
+    padding: 0 18px;
+    border: none;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.btn-primary-custom {
+    background: #16a34a;
+    color: #fff;
+}
+
+    .btn-primary-custom:hover {
+        background: #15803d;
+    }
+
+.btn-dark-custom {
+    background: #374151;
+    color: #fff;
+}
+
+    .btn-dark-custom:hover {
+        background: #1f2937;
+    }
+
+.btn-upload {
+    background: #0d6efd;
+    color: #fff;
+}
+
+    .btn-upload:hover {
+        background: #0b5ed7;
+    }
+
+/* ========================================
+   FORM
+======================================== */
+
+form {
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    align-items: flex-start;
+}
+
+    /* LABEL */
+
+    .form-row label {
+        min-width: 180px;
+        font-size: 15px;
+        font-weight: 700;
+        color: #111827;
+        padding-top: 12px;
+    }
+
+/* RIGHT */
+
+.form-right {
+    flex: 1;
+    width: 100%;
+}
+
+/* ========================================
+   INPUT
+======================================== */
+
+.form-control-custom,
+.upload-input,
+.editor-box,
+select.form-control-custom {
+    width: 100%;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    padding: 12px 14px;
+    font-size: 14px;
+    background: #fff;
+    transition: 0.2s;
+}
+
+/* INPUT HEIGHT */
+
+.form-control-custom,
+.upload-input,
+select.form-control-custom {
+    height: 46px;
+}
+
+    /* FOCUS */
+
+    .form-control-custom:focus,
+    .upload-input:focus,
+    .editor-box:focus,
+    select.form-control-custom:focus {
+        border-color: #16a34a;
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(22,163,74,.12);
+    }
+
+/* ========================================
+   TEXTAREA
+======================================== */
+
+.editor-box {
+    min-height: 260px;
+    resize: vertical;
+    line-height: 1.7;
+    padding: 18px;
+}
+
+.tox-tinymce {
+    border-radius: 6px !important;
+    border: 1px solid #d1d5db !important;
+}
+
+/* ========================================
+   SMALL TEXT
+======================================== */
+
+.form-right small {
+    display: block;
+    margin-top: 10px;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+/* ========================================
+   FILE UPLOAD
+======================================== */
+
+.upload-box {
+    display: flex;
+    align-items: center;
+}
+
+.upload-input {
+    border-left: none;
+    border-radius: 0 6px 6px 0;
+}
+
+.btn-upload {
+    border-radius: 6px 0 0 6px;
+}
+
+/* ========================================
+   IMAGE PREVIEW
+======================================== */
+
+.image-preview {
+    margin-top: 18px;
+}
+
+    .image-preview img {
+        width: 180px;
+        max-width: 100%;
+        border: 1px solid #e5e7eb;
+        border-radius: 6px;
+        padding: 10px;
+        background: #fff;
+    }
+
+/* ========================================
+   SWITCH
+======================================== */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 62px;
+    height: 34px;
+}
+
+    .switch input {
+        display: none;
+    }
+
+.slider {
+    position: absolute;
+    inset: 0;
+    background: #d1d5db;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+    .slider::before {
+        content: "";
+        position: absolute;
+        width: 28px;
+        height: 28px;
+        left: 3px;
+        top: 3px;
+        background: #fff;
+        border-radius: 50%;
+        transition: 0.3s;
+    }
+
+.switch input:checked + .slider {
+    background: #16a34a;
+}
+
+    .switch input:checked + .slider::before {
+        transform: translateX(28px);
+    }
+
+/* ========================================
+   SUBMIT
+======================================== */
+
+.submit-row {
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 992px) {
+
+    .form-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+        .form-row label {
+            min-width: unset;
+            padding-top: 0;
+        }
+
+    .page-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .editor-box {
+        min-height: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .add-store-page {
+        padding: 20px;
+    }
+
+    .page-title {
+        font-size: 24px;
+    }
+
+    .header-actions {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .btn-primary-custom,
+    .btn-dark-custom {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .upload-box {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-upload {
+        border-radius: 6px 6px 0 0;
+    }
+
+    .upload-input {
+        border-left: 1px solid #d1d5db;
+        border-top: none;
+        border-radius: 0 0 6px 6px;
+    }
+}
